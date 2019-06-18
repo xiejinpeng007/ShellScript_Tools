@@ -11,28 +11,33 @@
 ```
 adb devices
 ```
-如果提示 adb command not found 那么就没有，按照以下步骤安装。
+如果提示 adb command not found 那么就没有,两种方式安装。
+* 运行 install_adb.sh
 
-1. 安装 homebrew
+* 按照以下步骤安装
+
+   1. 安装 homebrew
 
    ```
    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
    ```
 
-2. 安装 adb (根据提示输入相关信息)
+   2. 安装 adb (根据提示输入相关信息)
 
    ```
    brew install homebrew/cask/android-platform-tools
    ```
 
-3. 检查是否安装好
+   3. 检查是否安装好
 
    ```
    adb devices
    ```
 
 #### 说明：
-* 工具都在 Mac 端使用(实际为`自动操作`)
+* 工具通过`自动操作`实现智能在 Mac 端使用
+
+* .sh 为 shell脚本
 
 * 使用时确保 Mac 只连接了一台 Android 设备，否则无法使用。
 
